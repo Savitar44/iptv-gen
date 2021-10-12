@@ -12,13 +12,13 @@ echo
 read -p "$(echo -e $green"Digite a url do Canal: "$sc)" channel_url
 sleep 2s
 clear
-echo "\033[0;34mAdicionando Canal...\033[0m"
+echo -e "\033[0;34mAdicionando Canal...\033[0m"
 sleep 2s
 clear
-echo "\033[0;34mCanal Adicionado com Sucesso! \033[0m"
-sleep 1s
+echo -e "\033[0;34mCanal Adicionado com Sucesso! \033[0m"
+sleep 2s
 echo
-echo "\033[1;31mSalvo na memória do seu dispositivo\033[0m"
+echo -e "\033[1;31mSalvo na memória do seu dispositivo\033[0m"
 echo "#EXTINF:-1, $channel_name" >> ~/list-iptv.txt
 echo "$channel_url" >> ~/list-iptv.txt
 echo >> ~/list-iptv.txt

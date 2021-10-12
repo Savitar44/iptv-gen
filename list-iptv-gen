@@ -1,13 +1,15 @@
 #!/bin/bash
 extra='"'
+green='\033[1;32m'
+sc='\033[0m'
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[41;1;37m     • ADICIONAR NA LISTA •  \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-read -p "\033[1;32mDigite o nome do canal: \033[0m" channel_name
+read -p "$(echo -e $green"Digite o nome do canal: "$sc)" channel_name
 sleep 2s
 echo
-read -p "\033[1;32mDigite a url do Canal: \033[0m" channel_url
+read -p "$(echo -e $green"Digite a url do Canal: "$sc)" channel_url
 sleep 2s
 clear
 echo "\033[0;34mAdicionando Canal...\033[0m"

@@ -1,0 +1,26 @@
+#!/bin/bash
+extra='"'
+clear
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[41;1;37m     • ADICIONAR NA LISTA •  \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+read -p "\033[1;32mDigite o nome do canal: \033[0m" channel_name
+sleep 2s
+echo
+read -p "\033[1;32mDigite a url do Canal: \033[0m" channel_url
+sleep 2s
+clear
+echo "\033[0;34mAdicionando Canal...\033[0m"
+sleep 2s
+clear
+echo "\033[0;34mCanal Adicionado com Sucesso! \033[0m"
+sleep 1s
+echo
+echo "\033[1;31mSalvo na memória do seu dispositivo\033[0m"
+echo "#EXTINF:-1, $channel_name" >> ~/list-iptv.txt
+echo "$channel_url" >> ~/list-iptv.txt
+echo >> ~/list-iptv.txt
+cp list-iptv.txt /sdcard
+sleep 4s
+clear
+curl -sO https://raw.githubusercontent.com/Savitar44/iptv-gen/main/menu && bash menu

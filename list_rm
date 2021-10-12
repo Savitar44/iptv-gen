@@ -1,0 +1,14 @@
+#!/bin/bash
+clear
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[41;1;37m     • ESVAZIAR LISTA IPTV • \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;32mEsvaziando lista iptv! \033[0m"
+rm -rf list-iptv.txt
+touch list-iptv.txt
+sleep 5s
+clear
+echo -e "\033[1;32mLista iptv esvaziada com Sucesso! \033[0m"
+sleep 4s
+clear
+curl -sO https://raw.githubusercontent.com/Savitar44/iptv-gen/main/menu && bash menu

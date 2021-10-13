@@ -9,7 +9,7 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 read -p "$(echo -e $green"Digite o nome do canal: "$sc)" channel_name
 sleep 2s
 echo
-read -p "$(echo -e $green"Digite a categoria: "$sc)" group_name
+read -p "$(echo -e $green"Digite sua categoria: "$sc)" group_name
 sleep 2s
 echo
 read -p "$(echo -e $green"Digite a url do Canal: "$sc)" channel_url

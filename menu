@@ -23,7 +23,7 @@ read option
    clear
    exit
    ;;
-   (*) echo -e "\033[1,31mOpção inválida! \033[0m"
+   (*) echo -e "\033[1;31mOpção inválida! \033[0m"
    curl -sO https://raw.githubusercontent.com/Savitar44/iptv-gen/main/menu && bash menu
 
 esac

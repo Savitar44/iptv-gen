@@ -9,6 +9,9 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 read -p "$(echo -e $green"Digite o nome do canal: "$sc)" channel_name
 sleep 2s
 echo
+read -p "$(echo -e $green"Digite a categoria: "$sc)" group_name
+sleep 2s
+echo
 read -p "$(echo -e $green"Digite a url do Canal: "$sc)" channel_url
 sleep 2s
 clear
@@ -19,7 +22,8 @@ echo -e "\033[0;34mCanal Adicionado com Sucesso! \033[0m"
 sleep 2s
 echo
 echo -e "\033[1;31mSalvo na memória do seu dispositivo\033[0m"
-echo "#EXTINF:-1, $channel_name" >> ~/list-iptv.txt
+echo "#EXTM3U" >> ~/list-iptv.txt
+echo "#EXTINF:-0 group-title=${extra}$group_name${extra}, $channel_name" >> ~/list-iptv.txt
 echo "$channel_url" >> ~/list-iptv.txt
 echo >> ~/list-iptv.txt
 cp list-iptv.txt /sdcard
